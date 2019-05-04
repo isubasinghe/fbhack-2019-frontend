@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
 import { Card, ProgressBar } from 'react-bootstrap';
+import MediaQuery from 'react-responsive';
 
 import Nav from '../../components/Nav';
 
@@ -20,8 +21,11 @@ const getSkills = () => {
   ];
 };
 
-const getName = () => {
-
+const getDetails = () => {
+  return {
+    name: 'Umar',
+    description: ''
+  }
 };
 class Profile extends Component {
 
@@ -34,7 +38,9 @@ class Profile extends Component {
   render() {
     return (
       <Fragment>
-        <Nav activeKey='/myprofile' />
+        <MediaQuery query="(min-device-width: 1224px)">
+          <Nav activeKey='/myprofile' />
+        </MediaQuery>
         <img className='profile-pic' src={profilePic} />
         {this.state.skills.map((skill, index) => {
           if(index > 5) {
@@ -43,8 +49,8 @@ class Profile extends Component {
             );
           }
           return (
-            <div className="d-flex justify-content-center">
-              <Card className="cards" key={index}>
+            <div key={index} className="d-flex justify-content-center">
+              <Card className="cards" >
                 <Card.Body>
                   {skill.name}
                 </Card.Body>
@@ -55,6 +61,9 @@ class Profile extends Component {
             </div>
           );
         })}
+        <MediaQuery query="(max-device-width: 1224px)">
+          <Nav activeKey='/myprofile' />
+        </MediaQuery>
       </Fragment>
      
       
