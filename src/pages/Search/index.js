@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-
+import React, { Component, Fragment } from 'react';
+import MediaQuery from 'react-responsive';
 import Nav from '../../components/Nav';
 
 class Search extends Component {
@@ -9,7 +9,14 @@ class Search extends Component {
 
   render() {
     return (
-      <Nav activeKey="/search" />
+      <Fragment>
+        <MediaQuery query="(min-device-width: 1224px)">
+          <Nav activeKey='/search' />
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 1224px)">
+          <Nav bottom activeKey='/search' />
+        </MediaQuery>
+      </Fragment>
     );
   }
 }
