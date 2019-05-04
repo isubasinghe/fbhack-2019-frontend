@@ -1,10 +1,36 @@
 .swipeable-main {
-    margin: 0;
+    margin: 0 auto;
     position: absolute;
-    top: 50%;
+    top: 35%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     min-height: 10%;
     width: 100%;
-    
+    align-content: center;
+    border-radius: 25px;
+
+}
+
+.card-img-top {
+  border-radius: 25px;
+  align-self: center;
+  width: 10em;
+  height: 10em;
+  padding-bottom: 1em;
+  object-fit:scale-down;
+}
+
+.skill {
+  padding-bottom: 1em;
+  font-size: 0.65em;
+}
+
+.desc {
+  font-size: 0.8em;
+  padding-bottom: 1em;
+}
+
+.name {
+  font-size: 2em;
+
 }
