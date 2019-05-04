@@ -37,10 +37,6 @@ class Signup extends Component {
               <Form.Control inputRef={input => {this.data.password = input} }type="password" placeholder="Password" />
             </Form.Group>
 
-            <Form.Group controlId="formBasicChecbox">
-              <Form.Check className="checkbox-accept-tac" type="checkbox" label="I agree to the Terms and Conditions" />
-            </Form.Group>
-
             <Form.Group controlId="submit">
               <Button className="submit-button" onClick={this.handleSubmit} >
                 Submit
