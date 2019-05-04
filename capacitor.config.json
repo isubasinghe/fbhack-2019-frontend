@@ -1,0 +1,12 @@
+{
+  "appId": "me.isubasinghe.hacks.hackr",
+  "appName": "Hackr",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "windowsAndroidStudioPath": "D:\\Program Files\\Android\\Android Studio\\bin\\studio64.exe",
+  "android": {
+    "allowMixedContent": true
+  }
+
+}
