@@ -1,0 +1,66 @@
+.hack-grids {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 100%;
+  width: 10em;
+  height: 10.5em;
+}
+
+// .row {
+//   font-size: 5em;
+//   color: #ffffff;
+//
+// }
+
+.text-main {
+    font-size: 3em;
+    color: #ffffff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.text-main {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+.button {
+
+  padding-bottom: 1em
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #FF6666;
+    border-color: #FF6666;
+}
+
+
+.card-row {
+  padding-bottom: 1em;
+
+}
+
+.hack-card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em; /* Vertically center the text there */
+    transition: opacity 0.4s;
+    &.scrolling {
+        opacity: 0;
+        pointer-events: none;
+
+    }
+}
