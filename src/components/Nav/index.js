@@ -8,12 +8,15 @@ class Navbar extends Component {
   render() {
     return (
       <div className='nav-container'>
-        <Nav variant="pills" activeKey={this.props.activeKey}>
+        <Nav fill variant="pills" activeKey={this.props.activeKey}>
           <Nav.Item>
             <Nav.Link href="/">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="/search">Search</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/myprofile">Profile</Nav.Link>
           </Nav.Item>
         </Nav>
       </div>

@@ -6,6 +6,7 @@ $md: 768px;
         border-radius: 10%;
         width: 30%;
         min-height: 30%;
+        margin-bottom: 10%;
     }
     margin-top: 5%;
     .checkbox-accept-tac {
@@ -13,17 +14,16 @@ $md: 768px;
         margin-left: 1%;
     }
     width: 40%;
-    min-height: 40%;
+    min-height: 60%;
 
     @media screen and (max-width: $md) {
         width: 80%;
     }
-    border: 2px solid #3D9970;
-    border-radius: 1em;
+  
     padding: 1em;
     position: absolute;
     
-    top: 45%;
+    top: 40%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 

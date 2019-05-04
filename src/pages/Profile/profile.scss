@@ -1,0 +1,16 @@
+.profile-pic{
+    border-radius: 100%;
+    width: 10em;
+    height: 10.5em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.cards {
+    width: 80%;
+    @media screen and (min-width: 1400px) {
+        width: 40%;
+    }
+    margin: 1%;
+    padding: 1%;
+}
