@@ -6,8 +6,12 @@ import './nav.scss';
 
 class Navbar extends Component {
   render() {
+    let bottom = '';
+    if(this.props.bottom !== undefined) {
+      bottom = 'nav-bottom';
+    }
     return (
-      <div className='nav-container'>
+      <div className={'nav-container ' + bottom}>
         <Nav fill variant="pills" activeKey={this.props.activeKey}>
           <Nav.Item>
             <Nav.Link href="/">Home</Nav.Link>

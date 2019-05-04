@@ -51,7 +51,7 @@ class Profile extends Component {
           return (
             <div key={index} className="d-flex justify-content-center">
               <Card className="cards" >
-                <Card.Body>
+                <Card.Body style={{fontSize: '12px', height: '10px', backgroundColor: 'back'}}>
                   {skill.name}
                 </Card.Body>
 
@@ -62,7 +62,7 @@ class Profile extends Component {
           );
         })}
         <MediaQuery query="(max-device-width: 1224px)">
-          <Nav activeKey='/myprofile' />
+          <Nav bottom activeKey='/myprofile' />
         </MediaQuery>
       </Fragment>
      
