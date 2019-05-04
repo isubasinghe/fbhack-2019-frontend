@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-import { Form } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 
 import './signup.scss';
@@ -9,7 +9,16 @@ import './signup.scss';
 class Signup extends Component {
   constructor(props) {
     super(props);
+    this.data = {
+      email: React.createRef(),
+      password: React.createRef(),
+    };
   }
+
+  handleSubmit() {
+    
+  }
+
   render() {
     return (
       <div className="d-flex justify-content-center">
@@ -17,7 +26,7 @@ class Signup extends Component {
           <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control inputRef={input => {this.data.email = input}} type="email" placeholder="Enter email" />
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -25,11 +34,17 @@ class Signup extends Component {
 
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control inputRef={input => {this.data.password = input} }type="password" placeholder="Password" />
             </Form.Group>
 
             <Form.Group controlId="formBasicChecbox">
-              <Form.Check className="checkbox-accept-tac" type="checkbox" label="Check me out" />
+              <Form.Check className="checkbox-accept-tac" type="checkbox" label="I agree to the Terms and Conditions" />
+            </Form.Group>
+
+            <Form.Group controlId="submit">
+              <Button className="submit-button" onClick={this.handleSubmit} >
+                Submit
+              </Button>
             </Form.Group>
           </Form>
         </div>
