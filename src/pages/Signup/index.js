@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { Form, Button } from 'react-bootstrap';
 
+import logo from '../../hackr.svg';
 
 import './signup.scss';
 
@@ -26,6 +27,7 @@ class Signup extends Component {
     return (
       <div className="d-flex justify-content-center">
         <div className='signup-container'>
+          <img className="hackr-logo" src={logo} />
           <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
