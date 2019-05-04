@@ -33,9 +33,24 @@ class Profile extends Component {
     super(props);
     this.state = {
       skills: getSkills(),
+      scrolling: ''
     };
+    
+    document.addEventListener('touchstart', this.handleTouchStart);
+    document.addEventListener('touchend', this.handleTouchEnd);
+
   }
+
+  handleTouchStart = () => {
+    this.setState({scrolling: 'scrolling'});
+  }
+
+  handleTouchEnd = () => {
+    this.setState({scrolling: ''});
+  }
+
   render() {
+
     return (
       <Fragment>
         <MediaQuery query="(min-device-width: 1224px)">
@@ -45,7 +60,7 @@ class Profile extends Component {
 
         <div className="card-container">
           {this.state.skills.map((skill, index) => {
-            if(index > 2) {
+            if(index > 8) {
               return (
                 <div key={index}/>
               );
@@ -53,11 +68,12 @@ class Profile extends Component {
             return (
                 <div  className="d-flex justify-content-center">
                 <Card className="cards" >
-                  <Card.Body style={{fontSize: '12px', height: '10px', backgroundColor: 'back'}}>
+                  <Card.Body >
                     {skill.name}
+                     <ProgressBar now={skill.prof} />
                   </Card.Body>
 
-                  <ProgressBar now={skill.prof} />
+                 
 
                 </Card>
               </div>
@@ -66,7 +82,10 @@ class Profile extends Component {
         </div>
 
         <MediaQuery query="(max-device-width: 1224px)">
-          <Nav bottom activeKey='/myprofile' />
+        
+          <footer className={"footer " + this.state.scrolling}>
+            <Nav bottom activeKey='/myprofile' />
+          </footer>
         </MediaQuery>
       </Fragment>
      
