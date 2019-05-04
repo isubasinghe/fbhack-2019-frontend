@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import Cards, { Card } from 'react-swipe-card';
+
 
 const getUsers = () => {
   return [
@@ -22,9 +22,7 @@ class Profiles extends Component {
   render() {
     return (
       <Fragment>
-        <Cards >
-          
-        </Cards>
+
       </Fragment>
     );
   }

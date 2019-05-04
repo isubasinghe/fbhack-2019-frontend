@@ -16,7 +16,7 @@ class Homepage extends Component {
   render() {
     return (
 
-
+      <Fragment>
       <div className='d-flex justify-content-center'>
           <Container>
                   <div className="row">
@@ -97,7 +97,7 @@ class Homepage extends Component {
 
 
 
-      <Fragment>
+
         <MediaQuery query="(min-device-width: 1224px)">
           <Nav activeKey='/' />
         </MediaQuery>
