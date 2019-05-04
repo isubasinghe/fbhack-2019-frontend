@@ -12,11 +12,36 @@ import { Container, Row, Col } from 'reactstrap';
 import './homepage.scss';
 
 
+
+
 class Homepage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scrolling: ''
+    };
+
+    document.addEventListener('touchstart', this.handleTouchStart);
+    document.addEventListener('touchend', this.handleTouchEnd);
+
+  }
+
+  handleTouchStart = () => {
+    this.setState({scrolling: 'scrolling'});
+  }
+
+  handleTouchEnd = () => {
+    this.setState({scrolling: ''});
+  }
+
   render() {
     return (
 
       <Fragment>
+
+      <MediaQuery query="(min-device-width: 1224px)">
+        <Nav activeKey='/' />
+      </MediaQuery>
       <div className='d-flex justify-content-center'>
           <Container>
                   <div className="row">
@@ -39,7 +64,7 @@ class Homepage extends Component {
                             </div>
 
                             <div className = 'button'>
-                              <Button variant="primary" href="../Profiles/index.js">Find t eammates</Button>
+                              <Button variant="primary" href="../Profiles/index.js">Find teammates</Button>
                             </div>
                           </Card.Body>
                         </Card>
@@ -59,7 +84,7 @@ class Homepage extends Component {
                               <Button variant="primary" href="https://medhack.com.au">Read more</Button>
                             </div>
                             <div className = 'button'>
-                              <Button variant="primary">Find teammates</Button>
+                              <Button variant="primary" href="../Profiles/index.js">Find teammates</Button>
                             </div>
                           </Card.Body>
                         </Card>
@@ -82,7 +107,7 @@ class Homepage extends Component {
                               <Button variant="primary" href="https://imaginecup.microsoft.com">Read more</Button>
                             </div>
                             <div className = 'button'>
-                              <Button variant="primary">Find teammates</Button>
+                              <Button variant="primary" href="../Profiles/index.js">Find teammates</Button>
                             </div>
                           </Card.Body>
                         </Card>
@@ -95,14 +120,11 @@ class Homepage extends Component {
 
         </div>
 
-
-
-
-        <MediaQuery query="(min-device-width: 1224px)">
-          <Nav activeKey='/' />
-        </MediaQuery>
         <MediaQuery query="(max-device-width: 1224px)">
-          <Nav bottom activeKey='/' />
+
+          <footer className={"footer " + this.state.scrolling}>
+            <Nav bottom activeKey='/' />
+          </footer>
         </MediaQuery>
       </Fragment>
 

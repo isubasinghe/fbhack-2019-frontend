@@ -49,3 +49,18 @@
   float: none; /* Added */
   margin-bottom: 10px; /* Added */
 }
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em; /* Vertically center the text there */
+    transition: opacity 0.4s;
+    &.scrolling {
+        opacity: 0;
+        pointer-events: none;
+
+    }
+}
