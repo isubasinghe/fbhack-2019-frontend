@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Nav from '../../components/Nav';
 
 class Search extends Component {
   constructor(props) {
@@ -8,7 +9,7 @@ class Search extends Component {
 
   render() {
     return (
-      <div />
+      <Nav activeKey="/search" />
     );
   }
 }

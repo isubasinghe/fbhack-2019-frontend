@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
+import Nav from '../../components/Nav';
 
 class Homepage extends Component {
   render() {
     return (
-      <div/>
+      <Nav activeKey="/" />
     );
   }
 }

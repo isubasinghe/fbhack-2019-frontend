@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import { Form, Button } from 'react-bootstrap';
 
@@ -13,10 +13,13 @@ class Signup extends Component {
       email: React.createRef(),
       password: React.createRef(),
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit() {
-    
+    console.log(this.data.email.value);
+    console.log(this.data.password.value);
+
   }
 
   render() {
@@ -26,7 +29,7 @@ class Signup extends Component {
           <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control inputRef={input => {this.data.email = input}} type="email" placeholder="Enter email" />
+              <Form.Control ref={input => {this.data.email = input}} type="email" placeholder="Enter email" />
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -34,14 +37,13 @@ class Signup extends Component {
 
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control inputRef={input => {this.data.password = input} }type="password" placeholder="Password" />
+              <Form.Control ref={input => {this.data.password = input} }type="password" placeholder="Password" />
             </Form.Group>
 
-            <Form.Group controlId="submit">
-              <Button className="submit-button" onClick={this.handleSubmit} >
-                Submit
-              </Button>
-            </Form.Group>
+            <Button className="submit-button" onClick={this.handleSubmit} >
+              Submit
+            </Button>
+    
           </Form>
         </div>
         
