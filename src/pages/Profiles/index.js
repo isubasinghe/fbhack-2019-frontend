@@ -1,34 +1,10 @@
+
 import React, { Component, Fragment } from 'react';
+import { Card } from 'react-bootstrap';
 
+import users from '../../data/users';
 
-const getUsers = () => {
-  return [
-    {
-      name: 'Umair',
-      skills: [
-
-      ]
-    },
-    {
-      name: 'Isitha',
-      skills: [
-
-      ]
-    }
-  ];
-};
-
-
-function withSwipable(WrappedComponent) {
-  return class extends Component {
-    render() {
-      return (
-        <div/>
-      );
-    }
-  }
-}
-
+import './profiles.scss';
 class SwipeHolder extends Component {
 
   constructor(props) {
@@ -46,12 +22,13 @@ class SwipeHolder extends Component {
       startTime: 0,
       endX: 0,
       endTime: 0,
+      index: 0,
     }
   
   }
   
   componentDidMount() {
- 
+    
     console.log(this.elementRef);
     document.addEventListener('touchstart', this.onTouchStart);
     document.addEventListener('touchend', this.onTouchEnd);
@@ -77,9 +54,13 @@ class SwipeHolder extends Component {
       if( (this.state.endTime - this.state.startTime) < 300) {
         if((this.state.endX-this.state.startX) > 0) {
           console.log('swipe right');
+          this.handleRightSwipe();
         } else {
           console.log('swipe left');
+          this.handleLeftSwipe();
         }     
+      }else {
+        this.setState({currentX: 0, startX: 0});
       }
     
   }
@@ -88,19 +69,34 @@ class SwipeHolder extends Component {
 
   }
 
+  resetState = () => {
+    setTimeout(()=>{this.setState({currentX: 0, startX: 0})}, 300);
+  }
   handleLeftSwipe() {
-
+    this.setState({index: this.state.index+1});
+    this.resetState();
   }
 
   handleRightSwipe() {
-
+    this.setState({index: this.state.index+1});
+    this.resetState();
   }
 
   render() {
+    if(users.length-1 < this.state.index) {
+      return (
+        <div/>
+      );
+    }
     return (
       <div ref={this.elementRef} className="swipeable-main">
+        
         <div style={{position: 'absolute', left: this.state.currentX-this.state.startX, background: 'white', width: '100%'}} className="test">
-          Test
+          <Card>
+            <Card.Body>
+              {users[this.state.index].name}
+            </Card.Body>
+          </Card>
         </div>
       </div>
     );
