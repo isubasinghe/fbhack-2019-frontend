@@ -1,0 +1,26 @@
+.nav-container {
+    margin: auto;
+    width: 40%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    
+}
+
+.nav-link {
+    background-color: #AAAAAA;
+    opacity: 0.4;
+    margin: 2%;
+    color: #000;
+}
+
+.nav-link.active {
+    background-color:  #FF6666;
+    color:  #FF6666;
+    opacity: 1.0;
+}
+
+.nav-bottom {
+    position: absolute;
+    bottom: 0;
+}

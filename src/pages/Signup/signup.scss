@@ -1,0 +1,36 @@
+$md: 768px;
+
+
+.signup-container {
+    .hackr-logo {
+        border-radius: 10%;
+        width: 30%;
+        min-height: 30%;
+        margin-bottom: 10%;
+    }
+    margin-top: 5%;
+    .checkbox-accept-tac {
+        float: left;
+        margin-left: 1%;
+    }
+    width: 40%;
+    min-height: 60%;
+
+    @media screen and (max-width: $md) {
+        width: 80%;
+    }
+  
+    padding: 1em;
+    position: absolute;
+    
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    .submit-button {
+        margin-top: 3%;
+        float: right;
+        
+    }
+    
+}
