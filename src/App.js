@@ -15,9 +15,10 @@ function App() {
     <div className="App">
       <Router>
         <Route exact path='/' component={Homepage} />
-        <Route exact path='/signup' component={Signup} />
+        <Route exact path='/signin' component={Signup} />
         <Route exact path='/profiles' component={Profiles} />
         <Route exact path ="/myprofile" component={Profile} />
+        <Route path='/search/:key' component={Search} />
         <Route exact path='/search' component={Search} />
       </Router>
     </div>
