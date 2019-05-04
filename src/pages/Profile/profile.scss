@@ -18,3 +18,23 @@
     padding: 1%;
     max-height: 1%;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em; /* Vertically center the text there */
+    transition: opacity 0.4s;
+    &.scrolling {
+        opacity: 0;
+        pointer-events: none;
+        
+    }
+}
+
+.card-container {
+    .card-body {
+        padding: 0;
+    }
+}
