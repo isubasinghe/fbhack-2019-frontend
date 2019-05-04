@@ -36,13 +36,15 @@ class Profile extends Component {
       scrolling: ''
     };
     
-    document.addEventListener('touchstart', this.handleTouchStart);
+    document.addEventListener('scroll', this.handleTouchStart);
     document.addEventListener('touchend', this.handleTouchEnd);
 
   }
 
   handleTouchStart = () => {
-    this.setState({scrolling: 'scrolling'});
+    this.setState({scrolling: 'scrolling'})
+    clearTimeout(this.timeout);
+    this.timeout = setTimeout(() => {this.setState({scrolling: ''})}, 300);
   }
 
   handleTouchEnd = () => {
