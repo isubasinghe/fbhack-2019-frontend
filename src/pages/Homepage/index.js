@@ -66,7 +66,7 @@ class Homepage extends Component {
                             </div>
 
                             <div className = 'button'>
-                              <Button variant="primary" href="../Profiles/index.js">Find teammates</Button>
+                              <Button variant="primary" href="/search/92342-68722">Find teammates</Button>
                             </div>
                           </Card.Body>
                         </Card>
@@ -86,7 +86,7 @@ class Homepage extends Component {
                               <Button variant="primary" href="https://medhack.com.au">Read more</Button>
                             </div>
                             <div className = 'button'>
-                              <Button variant="primary" href="../Profiles/index.js">Find teammates</Button>
+                              <Button variant="primary" href="/search/89246-438613">Find teammates</Button>
                             </div>
                           </Card.Body>
                         </Card>
@@ -109,7 +109,7 @@ class Homepage extends Component {
                               <Button variant="primary" href="https://imaginecup.microsoft.com">Read more</Button>
                             </div>
                             <div className = 'button'>
-                              <Button variant="primary" href="../Profiles/index.js">Find teammates</Button>
+                              <Button variant="primary" href="/search/45872-278132">Find teammates</Button>
                             </div>
                           </Card.Body>
                         </Card>

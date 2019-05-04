@@ -1,6 +1,6 @@
 
 import React, { Component, Fragment } from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Modal } from 'react-bootstrap';
 
 import users from '../../data/users';
 
@@ -23,6 +23,7 @@ class SwipeHolder extends Component {
       endX: 0,
       endTime: 0,
       index: 0,
+      showModal: false
     }
   
   }

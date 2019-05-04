@@ -20,6 +20,7 @@ class Signup extends Component {
   handleSubmit() {
     console.log(this.data.email.value);
     console.log(this.data.password.value);
+    this.props.history.push('/');
 
   }
 
