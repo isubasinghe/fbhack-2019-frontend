@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+
+import MediaQuery from 'react-responsive';
 
 import Nav from '../../components/Nav';
 
@@ -13,6 +15,7 @@ import './homepage.scss';
 class Homepage extends Component {
   render() {
     return (
+
 
       <div className='d-flex justify-content-center'>
           <Container>
@@ -92,6 +95,16 @@ class Homepage extends Component {
 
         </div>
 
+
+
+      <Fragment>
+        <MediaQuery query="(min-device-width: 1224px)">
+          <Nav activeKey='/' />
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 1224px)">
+          <Nav bottom activeKey='/' />
+        </MediaQuery>
+      </Fragment>
 
     );
   }

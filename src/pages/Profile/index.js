@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, Container, Row, Col } from 'react';
 
 import { Card, ProgressBar } from 'react-bootstrap';
 import MediaQuery from 'react-responsive';
@@ -42,27 +42,31 @@ class Profile extends Component {
           <Nav activeKey='/myprofile' />
         </MediaQuery>
         <img className='profile-pic' src={profilePic} />
-        {this.state.skills.map((skill, index) => {
-          if(index > 5) {
+
+        <div className="card-container">
+          {this.state.skills.map((skill, index) => {
+            if(index > 2) {
+              return (
+                <div key={index}/>
+              );
+            }
             return (
-              <div key={index}/>
+                <div  className="d-flex justify-content-center">
+                <Card className="cards" >
+                  <Card.Body style={{fontSize: '12px', height: '10px', backgroundColor: 'back'}}>
+                    {skill.name}
+                  </Card.Body>
+
+                  <ProgressBar now={skill.prof} />
+
+                </Card>
+              </div>
             );
-          }
-          return (
-            <div key={index} className="d-flex justify-content-center">
-              <Card className="cards" >
-                <Card.Body>
-                  {skill.name}
-                </Card.Body>
+          })}
+        </div>
 
-                <ProgressBar now={skill.prof} />
-
-              </Card>
-            </div>
-          );
-        })}
         <MediaQuery query="(max-device-width: 1224px)">
-          <Nav activeKey='/myprofile' />
+          <Nav bottom activeKey='/myprofile' />
         </MediaQuery>
       </Fragment>
      

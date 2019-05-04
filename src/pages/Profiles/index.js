@@ -1,10 +1,31 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import Cards, { Card } from 'react-swipe-card';
 
+const getUsers = () => {
+  return [
+    {
+      name: 'Umair',
+      skills: [
+
+      ]
+    },
+    {
+      name: 'Isitha',
+      skills: [
+
+      ]
+    }
+  ];
+};
 
 class Profiles extends Component {
   render() {
     return (
-      <div/>
+      <Fragment>
+        <Cards >
+          
+        </Cards>
+      </Fragment>
     );
   }
 }

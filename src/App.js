@@ -6,6 +6,7 @@ import Profiles from './pages/Profiles';
 import Profile from './pages/Profile';
 import Search from './pages/Search';
 
+
 import logo from './logo.svg';
 import './App.css';
 
