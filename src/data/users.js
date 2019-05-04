@@ -4,7 +4,7 @@ export const users = [
             name: 'Grace Sng',
             description: 'Art enthusiast, looking to build design portfolio ',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
-            matched: false,
+            match: false,
             skills: [
                 {
                     name: 'Python',
