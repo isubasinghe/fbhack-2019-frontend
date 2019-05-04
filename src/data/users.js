@@ -4,6 +4,7 @@ export const users = [
             name: 'Grace Sng',
             description: 'Art enthusiast, looking to build design portfolio ',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            matched: false,
             skills: [
                 {
                     name: 'Python',
@@ -23,6 +24,7 @@ export const users = [
             name: 'Oliver',
             description: 'Hardworking, willing to learn',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: true,
             skills: [
                 {
                     name: '',
@@ -42,6 +44,7 @@ export const users = [
             name: 'Ava',
             description: '',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: true,
             skills: [
                 {
                     name: 'C',
@@ -61,6 +64,7 @@ export const users = [
             name: 'Lily',
             description: 'Reliable, Energetic',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: false,
             skills: [
                 {
                     name: 'Python',
@@ -80,6 +84,7 @@ export const users = [
             name: 'John',
             description: 'Enthusiatic, Orrganised',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: true,
             skills: [
                 {
                     name: 'C',
@@ -99,6 +104,7 @@ export const users = [
             name: 'Mason',
             description: 'Hard-working, a team-player, motivated',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: false,
             skills: [
                 {
                     name: 'Python',
@@ -118,6 +124,7 @@ export const users = [
             name: 'Charlie',
             description: 'reliable, self starter, energetic',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: true,
             skills: [
                 {
                     name: 'React.js',
@@ -137,6 +144,7 @@ export const users = [
             name: 'Emily',
             description: '',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: false,
             skills: [
                 {
                     name: '',
@@ -156,6 +164,7 @@ export const users = [
             name: 'David',
             description: 'hardworking, passionate, energetic',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: true,
             skills: [
                 {
                     name: 'Python',
@@ -175,6 +184,7 @@ export const users = [
             name: 'William',
             description: 'Hardworking, independent, flexible',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: false,
             skills: [
                 {
                     name: 'java',
@@ -194,6 +204,7 @@ export const users = [
             name: 'Manson',
             description: 'Motivated, reliable, Responsible',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: true,
             skills: [
                 {
                     name: 'C',
@@ -213,6 +224,7 @@ export const users = [
             name: 'Richard',
             description: 'Creative, Hardworking',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: false,
             skills: [
                 {
                     name: 'Excel',
@@ -232,6 +244,7 @@ export const users = [
             name: 'George',
             description: 'Hardworking, Creative, Responsible',
             picURL: 'https://files.slack.com/files-pri/TJE7RBR08-FJE9M75EU/photo_from_umair_mawani.jpg',
+            match: true,
             skills: [
                 {
                     name: 'Python',
