@@ -13,16 +13,16 @@ $md: 768px;
         float: left;
         margin-left: 1%;
     }
-    width: 40%;
+    width: 30%;
     min-height: 60%;
 
     @media screen and (max-width: $md) {
         width: 80%;
     }
-  
+
     padding: 1em;
     position: absolute;
-    
+
     top: 40%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -30,7 +30,16 @@ $md: 768px;
     .submit-button {
         margin-top: 3%;
         float: right;
-        
+        background: #FF6666;
+        border-color: #FF6666;
+
     }
-    
+    .form {
+      color: #ffffff;
+      text-align: left;
+      text-indent: 5px;
+      font-family: 'Helvetica Neue';
+
+    }
+
 }
