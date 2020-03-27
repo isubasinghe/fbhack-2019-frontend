@@ -1046,9 +1046,9 @@
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-1.5.0.tgz#e033a7fdbceb1a0b9efa102a1cc664bafe3a1ec0"
 
-"@capacitor/cli@^1.0.0-beta.22":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-1.5.0.tgz#7420a60fb13a7c9feceaa3d91438aa78b9615924"
+"@capacitor/cli@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-1.5.2.tgz#f5abb08f339113a308d3590a9c2219fcdcd73069"
   dependencies:
     chalk "^2.3.0"
     commander "^2.12.2"
@@ -2796,11 +2796,7 @@ commander@2.17.x, commander@~2.17.1:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
-commander@^2.11.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
-
-commander@^2.12.2, commander@~2.20.3:
+commander@^2.11.0, commander@^2.12.2, commander@~2.20.3:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
 
@@ -2812,13 +2808,9 @@ commondir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
 
-compare-versions@^3.1.0:
+compare-versions@^3.1.0, compare-versions@^3.4.0:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/compare-versions/-/compare-versions-3.5.1.tgz#26e1f5cf0d48a77eced5046b9f67b6b61075a393"
-
-compare-versions@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/compare-versions/-/compare-versions-3.4.0.tgz#e0747df5c9cb7f054d6d3dc3e1dbc444f9e92b26"
 
 component-emitter@^1.2.1:
   version "1.2.1"
