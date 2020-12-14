@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@capacitor/android": "^1.0.0-beta.22",
+    "@capacitor/android": "^2.4.5",
     "@capacitor/cli": "^1.0.0-beta.22",
     "@capacitor/core": "^2.2.0",
     "axios": "^0.18.0",
